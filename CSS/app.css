@@ -291,6 +291,7 @@ header {
     height: 30px;
     background-image: url("https://images5.alphacoders.com/430/430918.jpg");
     background-attachment: fixed;
+    background-size: contain
 }
 
 .paralax2 {
@@ -298,6 +299,7 @@ header {
     height: 30px;
     background-image: url("../images/7.jpeg");
     background-attachment: fixed;
+    background-size: contain
 }
 
 
