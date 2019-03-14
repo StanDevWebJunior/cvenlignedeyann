@@ -178,7 +178,6 @@ header {
 
 #experience_div{
     background: white;
-
 }
 
 #experience_div .info1 img{
@@ -197,8 +196,8 @@ header {
 
 
 #experience_div #hack img{
-    max-height: 250px;
-    max-width: 250px;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 
