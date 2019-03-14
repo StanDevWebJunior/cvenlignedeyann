@@ -6,7 +6,7 @@
 body {
     font-family: 'Montserrat', sans-serif !important;
     background:  white!important;
-    overflow-x: hidden;
+    width: 100%;
 }
 
 
@@ -253,6 +253,10 @@ header {
     text-align: justify;
 }
 
+#langues p{
+    text-align: center
+}
+
 
 
 
@@ -275,6 +279,10 @@ header {
 }
 
 
+
+.navbar-light .navbar-toggler {
+    background: grey !important
+}
 
 
 .paralax {
@@ -478,98 +486,3 @@ footer {
 
 
 /* Selecteur pour le footer de la page */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#infoSection {
-    height: 300px;
-    border-top: 2px solid black;
-}
-
-
-#articleGauche {
-   
-    padding-left: 40px;
-    padding-top: 10px;
-    background: #FEFEE2
-}
-
-
-
-#articleGauche i {
-    font-size: 18px;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    border-radius: 20px;
-    text-align: center;
-    background: black;
-    color: white;
-}
-
-
-#articleGauche span {
-    margin-left: 10px;
-    font-size: 20px;
-}
-
-#articleGauche a {
-    text-decoration: none
-}
-
-
-
-#articleGauche img {
-    max-width: 50px;
-    max-height: 50px;
-}
-
-
-#articleGauche h2 {
-    text-decoration: underline;
-    margin-bottom: 30px;
-}
-
-
-
-
-
-
-#articleDroit #formations {
-    background: grey;
-    text-align: justify
-}
-
-
-
-#articleDroit h2{
-text-align: center
-}
-
-
-#experiences_pro{
-    background: white;
-    text-align: justify
-}
-
-
-
-
-.navbar-light .navbar-toggler {
-    background: grey !important
-}
