@@ -409,6 +409,7 @@ header {
       }
 
       .copyright{
+          height: auto!important;
         font-size: 15px!important;
       }
       
