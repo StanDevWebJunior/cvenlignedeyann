@@ -3,10 +3,14 @@
     padding: 0;
 }
 
+html{
+    line-height: none!important
+}
+
 body {
     font-family: 'Montserrat', sans-serif !important;
     background:  white!important;
-    width: 100%;
+    line-height: none!important;
     overflow-x: hidden
 }
 
@@ -16,37 +20,58 @@ header {
 }
 
 .avatar {
-    background: grey;
+    background: #b2bec3;
+    padding: 5px;
+    color: white!important;
     font-weight: bold;
 }
 
-.navbar {
-    background: #121212 !important;
+.avatar:hover{
+    background: red;
+    transition: 1s
 }
 
+.navbar {
+    background: black !important;
+}
 
-.navbar a {
+.navbar ul li a {
     color: azure !important;
 }
 
 
-.navbar a:hover {
-    background-color: grey !important;
-    transition: 1.5s
+.navbar ul li a:hover {
+    background-color: #dfe6e9 !important;
+    color: #121212!important;
+    font-weight: bold;
+    transition: 1s
 }
 
 
 /*  @@@@@@@@@@@@   Fin Header @@@@@@@@@@@@@@@@@@ */
 
 
+
+
+
 #profession {
-    background: white !important;
+    background: white!important;
 }
 
 
 #profession h1{
-    line-height: 200px
+    color: #0984e3;
+    line-height: 100px;
 }
+
+
+#profession span{
+    color: black;
+}
+
+
+
+
 
 
 
@@ -56,17 +81,8 @@ header {
 
 #competences{
     background: #dfe6e9;
- 
 }
 
-
-#competences .info{
-   margin-bottom: 50px
-}
-
-#competences h2{
-    margin-bottom: 50px
-}
 
 #competences img{
     max-width: 50px;
@@ -143,7 +159,7 @@ header {
     /*  ((((((((@@@@@@ DEBUT SECTION FORMATIONS @@@@@@@@@@)))))))))))))))*/
 
 #experience_pro{
-    background: #dfe6e9!important;
+    background: #c7ecee;
 }
 
 #experience_pro img{
@@ -157,8 +173,8 @@ header {
     margin-bottom: 10px
 }
 
-#experience_pro .figure{
-    text-align: justify;
+#experience_pro .figure p{
+    text-align: justify
 }
 
 
@@ -177,16 +193,12 @@ header {
 
 
 #experience_div{
-    background: white;
+    background: #dfe6e9;
 }
 
 #experience_div .info1 img{
     max-width: 150px;
     max-height: 150px;
-}
-
-#experience_div .info1{
-    margin-bottom: 50px
 }
 
 #experience_div #photos img{
@@ -260,11 +272,16 @@ header {
 
 
 
-#loisirs{
-    background: darkcyan;
-    color: white
+#apropos{
+    background: #c7ecee;
 }
 
+#apropos p{
+    color: #121212;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify
+}
 
 
 
@@ -274,10 +291,15 @@ header {
 #pied_page{
     background: black;
     color: white;
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 18px;
+
+    font-size: 18px;   
 }
 
+
+#pied_page .row{
+    background: black;
+    height: auto
+}
 
 #pied_page i{
     width: 50px;
@@ -291,15 +313,6 @@ header {
 }
 
 
-#pied_page a{
-    text-decoration: none;
-}
-
-
-#pied_page h3{
-    text-align: left
-}
-
 
 #pied_page .pied_info p{
     margin: 20px;
@@ -309,10 +322,33 @@ header {
 
 #pied_page ul li{
     list-style: none;
-    text-align: justify;
     padding: 10px
 }
 
+#pied_page ul li a{
+ text-decoration: none
+}
+
+#pied_page h3{
+    color: red;
+    margin: 10px 0 50px 0
+}
+
+.copyright{
+    background: white;
+    color: black;
+    height: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+  
+
+.copyright p{
+  font-size: 20px;
+  line-height: 50px;
+  color: black
+}
 
 
 
@@ -328,6 +364,14 @@ header {
 }
 
 
+.mesSections h2{
+    margin: 20px 0 100px 0;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+
+    color: #0984e3
+}
+
 
 .navbar-light .navbar-toggler {
     background: grey !important
@@ -336,7 +380,7 @@ header {
 
 .paralax {
     width: 100%;
-    height: 30px;
+    height: 100px;
     background-image: url("https://images5.alphacoders.com/430/430918.jpg");
     background-attachment: fixed;
     background-size: contain
@@ -344,7 +388,7 @@ header {
 
 .paralax2 {
     width: 100%;
-    height: 30px;
+    height: 100px;
     background-image: url("../images/7.jpeg");
     background-attachment: fixed;
     background-size: contain
@@ -352,5 +396,22 @@ header {
 
 
 .info{
-    border: 1px solid red
+    margin: 0 0 50px 0;
+  /*   border: 1px solid red; */
 }
+
+
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .paralax {
+      display:none;
+    }
+
+    .paralax2 {
+        display:none; 
+      }
+
+      #profession h1{
+          font-size: 20px;
+      }
+  }
